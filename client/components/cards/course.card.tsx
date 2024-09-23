@@ -17,7 +17,7 @@ export default function CourseCard({ item }: { item: CoursesType }) {
         })
       }
     >
-      <View style={{ paddingHorizontal: 10 }}>
+      <View style={{ paddingHorizontal: 10, elevation: 100, shadowOpacity: 0.2}}>
         <Image
           style={{
             width: wp(86),

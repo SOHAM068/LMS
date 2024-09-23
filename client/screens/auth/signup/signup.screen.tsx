@@ -142,7 +142,7 @@ export default function SignUpScreen() {
           Let's get started!
         </Text>
         <Text style={styles.learningText}>
-          Create an account to Becodemy to get all features
+          Create an account to Learning Academy to get all features
         </Text>
         <View style={styles.inputContainer}>
           <View>
@@ -150,7 +150,7 @@ export default function SignUpScreen() {
               style={[styles.input, { paddingLeft: 40, marginBottom: -12 }]}
               keyboardType="default"
               value={userInfo.name}
-              placeholder="shahriar sajeeb"
+              placeholder="Soham Dwivedi"
               onChangeText={(value) =>
                 setUserInfo({ ...userInfo, name: value })
               }
@@ -167,7 +167,7 @@ export default function SignUpScreen() {
               style={[styles.input, { paddingLeft: 40 }]}
               keyboardType="email-address"
               value={userInfo.email}
-              placeholder="support@becodemy.com"
+              placeholder="support@gmail.com"
               onChangeText={(value) =>
                 setUserInfo({ ...userInfo, email: value })
               }
@@ -189,7 +189,7 @@ export default function SignUpScreen() {
                 keyboardType="default"
                 secureTextEntry={!isPasswordVisible}
                 defaultValue=""
-                placeholder="********"
+                placeholder="************"
                 onChangeText={handlePasswordValidation}
               />
               <TouchableOpacity
@@ -269,7 +269,7 @@ export default function SignUpScreen() {
               <Text style={{ fontSize: 18, fontFamily: "Raleway_600SemiBold" }}>
                 Already have an account?
               </Text>
-              <TouchableOpacity onPress={() => router.push("/(routes)/login")}>
+              <TouchableOpacity onPress={() => router.back()}>
                 <Text
                   style={{
                     fontSize: 18,

@@ -102,7 +102,7 @@ export default function LoginScreen() {
       .then(async (res) => {
         await AsyncStorage.setItem("access_token", res.data.accessToken);
         await AsyncStorage.setItem("refresh_token", res.data.refreshToken);
-        router.push("/(tabs)");
+        router.replace("/(tabs)");
       })
       .catch((error) => {
         console.log(error);
@@ -126,7 +126,7 @@ export default function LoginScreen() {
           Welcome Back!
         </Text>
         <Text style={styles.learningText}>
-          Login to your existing account of Becodemy
+          Login to your existing account of Learning Academy
         </Text>
         <View style={styles.inputContainer}>
           <View>
@@ -134,7 +134,7 @@ export default function LoginScreen() {
               style={[styles.input, { paddingLeft: 40 }]}
               keyboardType="email-address"
               value={userInfo.email}
-              placeholder="support@becodemy.com"
+              placeholder="support@gmail.com"
               onChangeText={(value) =>
                 setUserInfo({ ...userInfo, email: value })
               }
@@ -156,7 +156,7 @@ export default function LoginScreen() {
                 keyboardType="default"
                 secureTextEntry={!isPasswordVisible}
                 defaultValue=""
-                placeholder="********"
+                placeholder="***********"
                 onChangeText={handlePasswordValidation}
               />
               <TouchableOpacity
