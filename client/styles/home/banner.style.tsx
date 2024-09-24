@@ -1,24 +1,54 @@
 import { StyleSheet } from "react-native";
-import { responsiveWidth } from "react-native-responsive-dimensions";
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from "react-native-responsive-screen";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 
 export const styles = StyleSheet.create({
   container: {
-    marginTop: 12,
+    marginTop: 20,
     height: hp("35%"),
     marginHorizontal: 16,
+    borderRadius: 12,  // Rounded corners for container
+    overflow: 'hidden', // Ensure images don't go outside bounds
   },
 
-  slide: { flex: 1, elevation: 10, shadowOpacity: 1 },
+  slide: {
+    flex: 1,
+    borderRadius: 12,
+    elevation: 10, // Shadow for Android
+    shadowColor: "#000",
+    shadowOpacity: 0.3,
+    shadowOffset: { width: 0, height: 10 },
+    shadowRadius: 15, // Shadow for iOS
+    position: "relative",
+  },
 
-  background: {
+  image: {
     width: "100%",
-    height: hp("27"),
-    resizeMode: "stretch",
-    zIndex: 1,
+    height: "100%",
+    borderRadius: 12,
+    resizeMode: "cover",  // Ensures the image fills its space with appropriate scaling
+  },
+
+  overlay: {
+    position: "absolute",
+    bottom: 20,
+    left: 20,
+    right: 20,
+    backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent overlay for text contrast
+    padding: 10,
+    borderRadius: 8,
+  },
+
+  bannerText: {
+    color: "#fff",
+    fontSize: hp("2.5%"),
+    fontFamily: "Raleway_700Bold",
+  },
+
+  bannerSubText: {
+    color: "rgba(255, 255, 255, 0.8)",
+    fontSize: hp("2%"),
+    marginTop: 5,
+    fontFamily: "Nunito_400Regular",
   },
 
   dot: {
@@ -31,56 +61,9 @@ export const styles = StyleSheet.create({
 
   activeDot: {
     backgroundColor: "#2467EC",
-    width: 10,
+    width: 17, // Slightly larger for better visibility
     height: 10,
-    borderRadius: 5,
+    borderRadius: 6,
     marginHorizontal: 3,
-  },
-
-  backgroundView: {
-    position: "absolute",
-    zIndex: 5,
-    paddingHorizontal: 18,
-    paddingVertical: 30,
-    flexDirection: "row",
-    alignItems: "center",
-  },
-
-  backgroundViewContainer: {
-    width: responsiveWidth(45),
-    height: responsiveWidth(30),
-    marginTop: -50,
-  },
-
-  backgroundViewText: {
-    color: "white",
-    fontSize: hp("2.7%"),
-  },
-
-  backgroundViewOffer: {
-    color: "rgba(255, 255, 255, 0.7)",
-    fontSize: 14,
-    marginTop: 5,
-  },
-
-  backgroundViewImage: {
-    width: wp("38%"),
-    height: hp("22%"),
-    top: -15,
-  },
-
-  backgroundViewButtonContainer: {
-    borderWidth: 1.1,
-    borderColor: "rgba(255, 255, 255, 0.5)",
-    width: 109,
-    height: 32,
-    borderRadius: 5,
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: 25,
-  },
-
-  backgroundViewButtonText: {
-    color: "#FFFF",
   },
 });

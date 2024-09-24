@@ -21,6 +21,7 @@ type User = {
   courses: any;
   createdAt: Date;
   updatedAt: Date;
+  role: string;
 };
 
 type BannerDataTypes = {
