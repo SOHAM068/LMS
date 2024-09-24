@@ -4,19 +4,25 @@ import { useFonts } from "expo-font";
 import useUser from "@/hooks/auth/useUser";
 import { Feather } from "@expo/vector-icons";
 import { router } from "expo-router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useFocusEffect } from "@react-navigation/native"; // Import useFocusEffect
+import { useCallback } from "react";
 
 export default function Header() {
   const [cartItems, setCartItems] = useState([]);
 
-  useEffect(() => {
-    const subscription = async () => {
-      const cart: any = await AsyncStorage.getItem("cart");
-      setCartItems(JSON.parse(cart));
-    };
-    subscription();
-  }, []);
+  // Fetch cart items whenever the screen gains focus
+  useFocusEffect(
+    useCallback(() => {
+      const fetchCartItems = async () => {
+        const cart = await AsyncStorage.getItem("cart");
+        setCartItems(cart ? JSON.parse(cart) : []);
+      };
+
+      fetchCartItems();
+    }, []) // Empty dependency array ensures this runs every time the screen is focused
+  );
 
   const { user } = useUser();
 
