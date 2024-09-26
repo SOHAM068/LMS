@@ -58,7 +58,8 @@ export default function ProfileScreen() {
     });
 
     if (!result.canceled) {
-      const base64 = await FileSystem.readAsStringAsync(result.assets[0].uri, { // readAsStringAsync is a method from FileSystem that reads the file as a string asynchronously
+      const base64 = await FileSystem.readAsStringAsync(result.assets[0].uri, {
+        // readAsStringAsync is a method from FileSystem that reads the file as a string asynchronously
         encoding: FileSystem.EncodingType.Base64, // encoding type is Base64 for the image file
       });
       setLoader(true);
@@ -98,7 +99,7 @@ export default function ProfileScreen() {
         <Loader />
       ) : (
         <LinearGradient
-          colors={["#E5ECF9", "#F6F7F9"]}
+          colors={["#D9E9F5", "#F5F9F9"]}
           style={{ flex: 1, paddingTop: 80 }}
         >
           <ScrollView>

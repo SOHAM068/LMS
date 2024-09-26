@@ -5,7 +5,7 @@ import AnimatedLoader from "react-native-animated-loader";
 export default function Loader() {
   return (
     <LinearGradient
-      colors={["#E5ECF9", "#F6F7F9"]}
+      colors={["#D9E9F5", "#F5F9F9"]}
       style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
     >
       <AnimatedLoader
