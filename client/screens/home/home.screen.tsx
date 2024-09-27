@@ -8,7 +8,7 @@ import AllCourses from "@/components/courses/all.courses";
 export default function HomeScreen() {
   return (
     <LinearGradient
-      colors={["#D9E9F5", "#F5F9F9"]}
+      colors={["#D9E9F5", "#F5F9F8"]}
       style={{ flex: 1, paddingTop: 50 }}
     >
       <Header />
