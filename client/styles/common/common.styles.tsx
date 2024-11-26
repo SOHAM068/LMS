@@ -41,7 +41,7 @@ export const commonStyles = StyleSheet.create({
   },
   description: {
     fontSize: hp("2.5%"),
-    color: "#575757",
+    color: "#575758",
     textAlign: "center",
   },
   input: {
