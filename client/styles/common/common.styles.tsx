@@ -56,7 +56,7 @@ export const commonStyles = StyleSheet.create({
   errorContainer: {
     flexDirection: "row",
     alignItems: "center",
-    marginHorizontal: 17,
+    marginHorizontal: 16,
     position: "absolute",
     top: 60,
   },
