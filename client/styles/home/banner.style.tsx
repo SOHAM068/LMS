@@ -64,6 +64,6 @@ export const styles = StyleSheet.create({
     width: 17, // Slightly larger for better visibility
     height: 10,
     borderRadius: 6,
-    marginHorizontal: 3,
+    marginHorizontal: 3.01,
   },
 });
