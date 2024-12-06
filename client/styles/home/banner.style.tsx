@@ -63,7 +63,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#2467EC",
     width: 17, // Slightly larger for better visibility
     height: 10,
-    borderRadius: 6.1,
+    borderRadius: 6,
     marginHorizontal: 3,
   },
 });
