@@ -61,7 +61,7 @@ export const styles = StyleSheet.create({
 
   activeDot: {
     backgroundColor: "#2467EC",
-    width: 17, // Slightly larger for better visibility
+    width: 16.9, // Slightly larger for better visibility
     height: 10,
     borderRadius: 6,
     marginHorizontal: 3,
