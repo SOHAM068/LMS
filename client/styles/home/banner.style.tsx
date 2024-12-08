@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     borderRadius: 12,
     elevation: 10, // Shadow for Android
     shadowColor: "#000",
-    shadowOpacity: 0.3,
+    shadowOpacity: 0.4,
     shadowOffset: { width: 0, height: 10 },
     shadowRadius: 15, // Shadow for iOS
     position: "relative",
