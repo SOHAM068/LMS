@@ -3,7 +3,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-nat
 
 export const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
+    marginTop: 20.01,
     height: hp("35%"),
     marginHorizontal: 16,
     borderRadius: 12,  // Rounded corners for container
