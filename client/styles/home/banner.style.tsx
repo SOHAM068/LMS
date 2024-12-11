@@ -3,7 +3,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-nat
 
 export const styles = StyleSheet.create({
   container: {
-    marginTop: 20.01,
+    marginTop: 20.01  ,
     height: hp("35%"),
     marginHorizontal: 16,
     borderRadius: 12,  // Rounded corners for container
@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     shadowColor: "#000",
     shadowOpacity: 0.3,
     shadowOffset: { width: 0, height: 10 },
-    shadowRadius: 15, // Shadow for iOS
+    shadowRadius: 14, // Shadow for iOS
     position: "relative",
   },
 
