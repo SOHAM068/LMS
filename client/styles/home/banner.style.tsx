@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     shadowColor: "#000",
     shadowOpacity: 0.3,
     shadowOffset: { width: 0, height: 10 },
-    shadowRadius: 14, // Shadow for iOS
+    shadowRadius: 15, // Shadow for iOS
     position: "relative",
   },
 
