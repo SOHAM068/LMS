@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     marginTop: 20.01  ,
     height: hp("35%"),
     marginHorizontal: 16,
-    borderRadius: 12,  // Rounded corners for container
+    borderRadius: 12.1,  // Rounded corners for container
     overflow: 'hidden', // Ensure images don't go outside bounds
   },
 
