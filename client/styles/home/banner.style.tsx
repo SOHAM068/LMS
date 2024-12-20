@@ -53,7 +53,7 @@ export const styles = StyleSheet.create({
 
   dot: {
     backgroundColor: "#C6C7CC",
-    width: 10.1,
+    width: 10,
     height: 10,
     borderRadius: 5,
     marginHorizontal: 3,
