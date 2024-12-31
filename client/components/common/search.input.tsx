@@ -125,7 +125,7 @@ export default function SearchInput({ homeScreen }: { homeScreen?: boolean }) {
               style={{
                 textAlign: "center",
                 paddingTop: 50,
-                fontSize: 20,
+                fontSize: 20.1,
                 fontWeight: "600",
               }}
             >
