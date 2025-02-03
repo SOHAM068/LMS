@@ -170,7 +170,7 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     color: "black",
     paddingVertical: 10,
-    width: 271,
+    width: 270,
     height: 48,
   },
 });
